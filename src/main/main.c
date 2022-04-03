@@ -1,19 +1,19 @@
-#include <libchessviz/chessviz.h>
+#include "../libchessviz/chessviz.h"
 
 #include <stdio.h>
 int main()
 {
-    char desc[9][9];
-    int MoveNum = 1;
-    int flag = 1;
-    makeboard(desc);
-    print_board(desc);
-    while (flag == 1) {
-        printf("%d. ", MoveNum);
-        white_t(desc);
-        black_t(desc);
-        print_board(desc);
-        MoveNum += 1;
+    char mass[9][9];
+    int MoveNumber = 1;
+    int j = 1;
+    CreateBoard(mass);
+    PrintBoard(mass);
+    while (j == 1) {
+        printf("%d.", MoveNumber);
+        WhiteTurn(mass);
+        PrintBoard(mass);
+        BlackTurn(mass);
+        PrintBoard(mass);
+        MoveNumber += 1;
     }
-    return 0;
 }
