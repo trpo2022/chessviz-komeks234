@@ -1,4 +1,5 @@
-/*.o
-/.main.c.swp
-/main.c~
-/#main.c#
+*.a
+*.d
+*.o
+bin/chessviz
+bin/chessviz-test
