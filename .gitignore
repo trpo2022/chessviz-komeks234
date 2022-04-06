@@ -1,0 +1,5 @@
+*.a
+*.d
+*.o
+bin/chessviz
+bin/chessviz-test
